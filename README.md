@@ -3,13 +3,13 @@
 
 ## Problem Statement
 
-Given the stock data of companies in 2020, predict their price change in the first quarter of 2021.
+Given the stock data of companies in 2020, predict their price change in the first quarter of 2021 and make recommendations.
 
 ## Data Description
 
 The stock data are stored as google sheets.
 
-Features are as follow:
+Features are as follows:
 
 Date - The date of the record.
 
@@ -27,11 +27,13 @@ Change% - The price change in percentage.
 
 For the price prediction and plotting only the `Date` and `Price` columns were used.
 
-## Models Applied
+## Approach
 
-Three approaches were tried for the project:
-    1.  A baseline model using moving average of 20 day window.
-    2.  An RNN model with one CNN, two LSTM and three Dense layers.
+To generate predictions for the stocks, we first trained models on the price data from 2020 and then predicted the price change in the first quarter of 2021. To make recommendations based on the predictions, we generated Bollinger Bands from the predictions using a 20-entry window and 2 times standard deviation. Then the actual price was compared against the prediction, if the price was higher than the upper band, we recommend selling the stock, and if the price was lower than the lower band, we recommend buying the stock.
+
+Three models were tried for the project:
+    1.  A baseline model using a moving average of a 20-day window.
+    2.  An RNN model with one CNN, two LSTM, and three Dense layers.
     3. Meta's Prophet model
 
 ## Final Model
@@ -40,7 +42,7 @@ The final model chosen was the Prophet model. It was able to achieve a reasonabl
 
 ## Evaluation Metrics
 
-The models were evaluated using MAE (Mean Abosolute Error). 
+The models were evaluated using MAE (Mean Absolute Error). 
 
 ## Results
 
