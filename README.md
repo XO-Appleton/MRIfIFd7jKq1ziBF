@@ -52,5 +52,4 @@ The Prophet model achieved 9.2 MAE on the PAMP stock which is around 10% off fro
 ## Screenshots
 Sample output of the Prophet model's prediction on PAMP stock.
 
-![Sample Output](![pamp_sample](https://github.com/XO-Appleton/MRIfIFd7jKq1ziBF/assets/41369365/7f696c12-c792-4995-a684-2c458bc287d8))
-
+![pamp_sample](https://github.com/XO-Appleton/MRIfIFd7jKq1ziBF/assets/41369365/99403f56-7a69-493e-8bc7-cbb24dee5ca8)
